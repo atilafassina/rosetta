@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "@emotion/core": "^10.0.27",
@@ -17,5 +17,9 @@
     "@types/node": "^13.7.4",
     "@types/react": "^16.9.22",
     "typescript": "^3.8.2"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
   }
 }
