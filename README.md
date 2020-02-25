@@ -1,3 +1,7 @@
+> ❗️ This project is heavily under development still. Not yet ready to be used.
+
+---
+
 This is an opinionated starter template for [Next.JS](https://github.com/zeit/next.js) projects that aim to have multi-language routes, plus other stack decisions to get you closer to the point of simply writing your app.
 
 > ❗️This project runs on a Custom Server until NextJS supports routes `Rewrite()` on stable releases. Using a Custom Server carries a series of tradeoffs that you must evaluate according to your project neccessities, **it is definitely not recommended for everyone**.
@@ -13,7 +17,7 @@ This is an opinionated starter template for [Next.JS](https://github.com/zeit/ne
 Clone this project into the destination directory:
 
 ```bash
-git@github.com:atilafassina/nextjs-multilang-starter.git {{dest_dir}}
+git@github.com:atilafassina/nextjs-multilang-boilerplate.git {{dest_dir}}
 ```
 
 Navigate into your project‘s directory and install the depedencies
