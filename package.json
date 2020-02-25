@@ -2,7 +2,15 @@
   "name": "nextjs-multilanguage",
   "version": "0.1.0",
   "private": true,
+  "languages": {
+    "supportedLanguages": [
+      "en",
+      "eo"
+    ],
+    "defaultLanguage": "en"
+  },
   "scripts": {
+    "server-dev": "nodemon server.js",
     "dev": "node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js"
@@ -16,6 +24,7 @@
   "devDependencies": {
     "@types/node": "^13.7.4",
     "@types/react": "^16.9.22",
+    "nodemon": "^2.0.2",
     "typescript": "^3.8.2"
   },
   "prettier": {

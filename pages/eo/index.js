@@ -23,50 +23,40 @@ const Home = () => (
 
     <main css={main}>
       <h1 css={header}>
-        Welcome to{' '}
+        Bonvenon al{' '}
         <a css={headerLink} href="https://nextjs.org">
           Next.js!
         </a>
       </h1>
 
       <p css={description}>
-        Get started by editing{' '}
-        <code css={code}>pages/{'{{ lang }}'}/index.js</code>
+        Get started by editing <code css={code}>pages/index.js</code>
       </p>
 
       <div css={grid}>
-        <a
-          href="https://nextjs.org/docs"
-          css={card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h3>Next.JS Docs ↗</h3>
+        <a href="https://nextjs.org/docs" css={card}>
+          <h3>Documentation &rarr;</h3>
           <p>Find in-depth information about Next.js features and API.</p>
         </a>
 
         <a href="https://nextjs.org/learn" css={card}>
-          <h3>Starter Docs &rarr;</h3>
+          <h3>Learn &rarr;</h3>
           <p>Learn about Next.js in an interactive course with quizzes!</p>
         </a>
 
         <a
           href="https://github.com/zeit/next.js/tree/master/examples"
           css={card}
-          target="_blank"
-          rel="noopener noreferrer"
         >
-          <h3>Examples ↗</h3>
+          <h3>Examples &rarr;</h3>
           <p>Discover and deploy boilerplate example Next.js projects.</p>
         </a>
 
         <a
           href="https://zeit.co/new?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           css={card}
-          target="_blank"
-          rel="noopener noreferrer"
         >
-          <h3>Deploy ↗</h3>
+          <h3>Deploy &rarr;</h3>
           <p>
             Instantly deploy your Next.js site to a public URL with ZEIT Now.
           </p>
