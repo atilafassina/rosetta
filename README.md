@@ -1,30 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+This is an opinionated starter template for [Next.JS](https://github.com/zeit/next.js) projects that aim to have multi-language routes, plus other stack decisions to get you closer to the point of simply writing your app.
 
-## Getting Started
+> ❗️This project runs on a Custom Server until NextJS supports routes `Rewrite()` on stable releases. Using a Custom Server carries a series of tradeoffs that you must evaluate according to your project neccessities, **it is definitely not recommended for everyone**.
 
-First, run the development server:
+## Stack
+
+- [EmotionCSS](https://github.com/emotion-js/emotion)
+- [Typescript](https://github.com/microsoft/TypeScript)
+- [Nodemon](https://github.com/remy/nodemon)
+
+## Getting started
+
+Clone this project into the destination directory:
 
 ```bash
-npm run dev
-# or
+git@github.com:atilafassina/nextjs-multilang-starter.git {{dest_dir}}
+```
+
+Navigate into your project‘s directory and install the depedencies
+
+```bash
+cd {{dest_dir}} && yarn
+```
+
+## Development
+
+| Task         | Description                                                                                 |
+| ------------ | ------------------------------------------------------------------------------------------- |
+| `server-dev` | Starts the development server with Nodemon so changes to the back-end restart the process.† |
+| `dev`        | Starts the development server for Next.JS with the custom server.                           |
+| `build`      | Compiles the application for production deployment                                          |
+| `start`      | Starts the production server                                                                |
+
+†: Hot reloading does not work in this mode
+
+## Usage
+
+For client-side only development:
+
+```bash
 yarn dev
+```
+
+For fullstack or server-side development:
+
+```bash
+yarn server-dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+You‘re now ready to start making changes to your app.
 
-## Learn More
+## Configuration
 
-To learn more about Next.js, take a look at the following resources:
+| Key                  | Description                                                  |
+| -------------------- | ------------------------------------------------------------ |
+| `supportedLanguages` | An array of languages that are supported by the application† |
+| `defaultLanguage`    | Which language is served on the apps root (`/`)              |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+†: The `slug` for the language route is taken from this array.
 
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
+## Directory Architecture
 
-## Deploy on ZEIT Now
-
-The easiest way to deploy your Next.js app is to use the [ZEIT Now Platform](https://zeit.co/) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> TBD
