@@ -14,16 +14,15 @@ This is an opinionated starter template for [Next.JS](https://github.com/zeit/ne
 
 ## Getting started
 
-Clone this project into the destination directory:
+1. Clone this project into the destination directory
+2. Navigate into your project‘s directory
+3. Install all depedencies
 
 ```bash
-git@github.com:atilafassina/nextjs-multilang-boilerplate.git {{dest_dir}}
-```
-
-Navigate into your project‘s directory and install the depedencies
-
-```bash
-cd {{dest_dir}} && yarn
+# You can do everything running this command:
+git clone git@github.com:atilafassina/nextjs-multilang-boilerplate.git PROJECT_NAME && \
+cd $_ && \
+yarn
 ```
 
 ## Development
