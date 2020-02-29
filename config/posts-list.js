@@ -1,0 +1,1 @@
+export default {"en":[{"name":"postName-3","slug":"/funcionou=3","date":"2020-02-02T00:00:00.000Z"},{"name":"postName","slug":"/funcionou","date":"2020-01-02T00:00:00.000Z"}],"eo":[{"name":"postName-3","slug":"/funcionou=3","date":"2020-02-02T00:00:00.000Z"},{"name":"postName","slug":"/funcionou","date":"2020-01-02T00:00:00.000Z"}]}
