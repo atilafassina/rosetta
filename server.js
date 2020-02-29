@@ -1,4 +1,4 @@
-let { languages } = require('./package.json')
+let { languages } = require('./config/main')
 let { supportedLanguages, defaultLanguage } = languages
 
 let { createServer } = require('http')
