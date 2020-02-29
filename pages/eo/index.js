@@ -11,7 +11,7 @@ import {
   header,
   headerLink,
   description
-} from '../../components/shared/index/styles'
+} from '../../components/index/styles'
 
 const Home = () => (
   <div css={container}>

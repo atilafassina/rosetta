@@ -1,13 +1,16 @@
 {
   "name": "nextjs-multilanguage",
   "version": "0.1.0",
+  "engines": {
+    "node": "12.x"
+  },
   "private": true,
   "scripts": {
     "server-dev": "nodemon server.js",
-    "dev": "node server.js",
-    "map-posts": "node ./bin/build-post-list.mjs",
+    "dev": "next dev",
+    "map-posts": "node --experimental-modules ./bin/build-post-list.mjs",
     "build": "yarn map-posts && next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "next start"
   },
   "dependencies": {
     "@emotion/core": "^10.0.27",

@@ -11,10 +11,17 @@ let FRONTMATTER_DIR = (lang, postName) =>
   path.resolve(
     __dirname,
     '../',
-    `pages/${lang}/posts/${postName}/frontmatter.mjs`
+    `pages/${
+      lang !== languages.defaultLanguage ? lang + '/' : ''
+    }/posts/${postName}/frontmatter.mjs`
   )
 
-let POSTS_DIR = lang => path.resolve(__dirname, '../', `pages/${lang}/posts`)
+let POSTS_DIR = lang =>
+  path.resolve(
+    __dirname,
+    '../',
+    `pages/${lang !== languages.defaultLanguage ? lang + '/' : ''}posts`
+  )
 
 let getPostInfo = async (postName, lang) => {
   let module = await import(FRONTMATTER_DIR(lang, postName))

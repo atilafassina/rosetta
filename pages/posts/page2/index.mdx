@@ -1,15 +1,13 @@
 import { Global } from '@emotion/core'
-import { globalStyles } from '../../components/shared/index/styles'
+import { globalStyles } from '../../../components/index/styles'
+import Post from '../../../templates/post-template'
 
 <Global styles={globalStyles} />
 
-export const frontMatter = {
-  name: 'apage3',
-  slug: '/funcionou-2',
-  date: new Date('2020-02-04')
-}
 
-# Hello Page 3
+<Post>
+
+# Hello Page 2
 
 Now using markdown.
 
@@ -25,3 +23,5 @@ import { globalStyles } from '../../components/shared/index/styles'
 
 Now using markdown.
 ```
+
+</Post>

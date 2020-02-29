@@ -34,6 +34,8 @@ app.prepare().then(() => {
     let langREGEX = new RegExp(`^${REGEXpattern}`)
     let matchedLang = pathname.match(langREGEX)
 
+    console.log(parse('https://rosetta-rho.now.sh/'))
+
     if (matchedLang === null) {
       app.render(req, res, `/en${pathname.length > 1 ? pathname : ''}`, query)
       return
