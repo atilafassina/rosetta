@@ -5,7 +5,8 @@
   "scripts": {
     "server-dev": "nodemon server.js",
     "dev": "node server.js",
-    "build": "next build",
+    "map-posts": "node ./bin/build-post-list.mjs",
+    "build": "yarn map-posts && next build",
     "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
