@@ -1,7 +1,9 @@
 import { writeFileSync, readdirSync } from 'fs'
-import { languages } from '../config/main.mjs'
+import config from '../config/main.js'
 import path from 'path'
 import { fileURLToPath } from 'url'
+
+let { languages } = config
 
 let __dirname = path.dirname(fileURLToPath(import.meta.url))
 
