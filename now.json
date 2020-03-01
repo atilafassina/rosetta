@@ -1,4 +1,7 @@
 {
-  "name": "rosetta",
-  "version": 2
+  "version": 2,
+  "redirects": [
+    { "source": "/en", "destination": "/" },
+    { "source": "/en/(.*)", "destination": "/$1" }
+  ]
 }
