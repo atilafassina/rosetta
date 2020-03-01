@@ -6,7 +6,6 @@
   },
   "private": true,
   "scripts": {
-    "server-dev": "nodemon server.js",
     "dev": "next dev",
     "map-posts": "node --experimental-modules ./bin/build-post-list.mjs",
     "build": "yarn map-posts && next build",
